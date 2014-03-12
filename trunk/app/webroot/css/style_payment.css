@@ -1,0 +1,349 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Reset
+----------------------------------------------------*/
+html {overflow-y: scroll;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin: 0;padding: 0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style: normal;}
+table,th,td {font-size: 100%;line-height: 1.6;}
+caption,th {text-align: left;font-weight: normal;}
+object,embed {vertical-align: top;}
+hr,legend {display: none;}
+h1,h2,h3,h4,h5,h6 {font-size: 100%;font-weight: normal;}
+img,abbr,acronym,fieldset {border: 0;}
+ul,li {list-style-type: none;}
+img,a img{border:none;background:transparent;vertical-align:bottom;}
+
+/* font
+----------------------------------------------------*/
+body {
+    font: 100% Verdana, "ＭＳ Ｐゴシック","メイリオ", Meiryo,  Osaka, "ヒラギノ角ゴ Pro W3";
+    color: #333;
+}
+html>/**/body { font-size: 10px; } /* Except IE */
+* html body { /* IE6用フォント指定 */
+    font: 100% Verdana, "ＭＳ Ｐゴシック","メイリオ", Meiryo,  Osaka, "ヒラギノ角ゴ Pro W3";
+}
+
+/*--- default */
+body {
+    background: #fff;
+    text-align: center;
+}
+
+/* Link
+----------------------------------------------------*/
+a {
+    color: #2389C7;
+}
+a:hover {
+    text-decoration: none;
+}
+a.imgHover:hover img{
+    opacity:0.75;
+    filter: alpha(opacity=75);
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    background:#FFF;/*FireFoxBug*/
+}
+
+
+/* float,clear
+----------------------------------------------------*/
+.fleft {
+    float: left;
+}
+.fright {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+.cf { /* clearfix */
+    zoom: 1;
+}
+.cf:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+
+/* text
+---------------------------------------- */
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+.txt_narrow {
+    letter-spacing: -1px;
+}
+.txt_space {
+    letter-spacing: 1px;
+}
+.txt_indent {
+    text-indent: 1em;
+}
+
+
+/* wrapper
+----------------------------------------------------*/
+#wrapper {
+    width: 830px;
+    margin: 0 auto;
+    border-top: 7px solid #2694D5;
+}
+
+
+/* header
+----------------------------------------------------*/
+#header {
+    position: relative;
+    width: 830px;
+    text-align: center;
+}
+#header p {
+    line-height: 1.6;
+    font-size: 130%;
+}
+
+/* content
+---------------------------------------- */
+#content {
+    width: 900px;
+    font-size: 120%;
+}
+
+/* main
+---------------------------------------- */
+
+#main {
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1.6;
+    margin: 0 7px;
+    width: 816px;
+}
+
+/* general
+----------------------------------------------------*/
+#content .last {
+    margin-bottom: 0;
+}
+
+/*  ========================= text */
+/*#content p {
+	margin-bottom: 1em;
+}*/
+#content .emphasis {
+    color: #f00;
+    font-weight: bold;
+}
+
+/*  ========================= img */
+#content .imgL {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 0;
+}
+#content .imgLbtm {
+    float: left;
+    margin-right: 1em;
+}
+#content .imgR {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+#content .imgRbtm {
+    float: right;
+    margin-left: 1em;
+}
+
+/*  ========================= box */
+.section {
+    margin: 0 10px;
+}
+
+/*  ========================= margin */
+.mt5 { margin-top: 5px; }
+.mt10 { margin-top: 10px; }
+.mt15 { margin-top: 15px; }
+.mt20 { margin-top: 20px; }
+.mt25 { margin-top: 25px; }
+.mt30 { margin-top: 30px; }
+.mt40 { margin-top: 40px; }
+.mt50 { margin-top: 50px; }
+
+.mb5 { margin-bottom: 5px; }
+.mb10 { margin-bottom: 10px; }
+.mb15 { margin-bottom: 15px; }
+.mb20 { margin-bottom: 20px; }
+.mb25 { margin-bottom: 25px; }
+.mb30 { margin-bottom: 30px; }
+.mb40 { margin-bottom: 40px; }
+.mb50 { margin-bottom: 50px; }
+
+
+/* payPlanPage
+----------------------------------------------------*/
+#payPlanPage .functionArea {
+    border-top:1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    width: 814px;
+}
+#payPlanPage .functionItem {
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 18px 12px 20px 12px;
+    width: 382px;
+    float: left;
+}
+#payPlanPage .h162 {
+    height: 162px;
+}
+#payPlanPage .functionItem h2 {
+    margin-bottom: 11px;
+}
+#payPlanPage .functionItem .functionTxt {
+    float: right;
+    width: 290px;
+}
+#payPlanPage .functionItem .functionTxt .before {
+    border: 1px solid #ABD6EF;
+    background: #F2F9FD;
+    padding: 4px;
+}
+#payPlanPage .functionItem .functionTxt .before li {
+    text-indent: -1.4em;
+    margin-left: 1.4em;
+}
+#payPlanPage .functionItem .functionTxt .after {
+    border: 1px solid #FFCECE;
+    background: #FFF4F4;
+    padding: 4px;
+}
+#payPlanPage .functionItem .functionTxt .arrow {
+    margin: 2px 0 1px;
+    line-height: 1.0;
+
+}
+#payPlanPage .qa {
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    width: 795px;
+    padding: 30px 9px 30px;
+}
+#payPlanPage .qaItem {
+    width: 380px;
+}
+#payPlanPage .qaItem dt {
+    background: url(../img/payment/payplan_quesiton.jpg) no-repeat left center;
+    padding-left: 30px;
+    min-height: 18px;
+    font-weight: bold;
+    padding-top: 4px;
+    margin-bottom: 1em;
+}
+#payPlanPage .qaItem dl+dl {
+    margin-top: 20px;
+}
+
+
+
+/* formPage
+----------------------------------------------------*/
+#contactPage form input,
+#contactPage form select,
+#contactPage form textarea {
+    margin-right: 5px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    vertical-align: middle;
+}
+#contactPage form .nonDeco {
+    border: none;
+    padding: 0;
+    background: none;
+}
+#contactPage form textarea {
+    font-size: 12px;
+}
+
+
+/* input width style
+----------------------------------------------------*/
+#contactPage form .input1 {
+    width: 150px;
+}
+#contactPage form .input2 {
+    width: 350px;
+}
+#contactPage form .input3 {
+    width: 80px;
+}
+#contactPage form .input4 {
+    width: 50px;
+}
+
+
+/* submit area style
+----------------------------------------------------*/
+#contactPage div#submit {
+    margin-top: 30px;
+    text-align: center;
+}
+#contactPage div#submit input {
+    width: 150px;
+    padding: 5px;
+    border: solid 1px #ccc;
+    background: #dfdfdf;
+}
+
+
+/* text style
+----------------------------------------------------*/
+#contactPage form p.attention {
+    margin-bottom: 5px;
+    padding-left: 0;
+    background: none;
+    color: #f00;
+    text-align: right;
+}
+#contactPage form table em {
+    margin-left: 2px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    color: #f00;
+}
+#contactPage p.formError {
+    color: #f00;
+    text-align: center;
+}
+#contactPage p.formMessage {
+    margin: 50px 0;
+    text-align: center;
+}
+.payment h2.page-title{
+    background: transparent url(../img/title-bar.gif) repeat-x 0 0;
+    height: 33px;
+    width: 98.3%;
+    border-radius: 3px;
+    padding: 6px;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    margin-left: 0;
+}
+.payment .hero-unit1{
+    margin:0 auto;
+}
